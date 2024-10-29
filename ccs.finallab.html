@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!--INTERNAL EXAMPLE-->
+<style>
+body {color: rgb(65, 18, 101);}
+h1 {color: rgb(13, 59, 11);}
+p {color: rgb(0, 128, 53)}
+img {
+    opacity: 0.5;
+}
+img:hover {
+  opacity: 1.0;
+}
+img#cat { 
+  border: 10px solid black;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  position: relative;
+}
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+.purple-box {
+  position: absolute;
+  z-index: 3;
+  background: rgb(238, 201, 234);
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+  overflow: visible;
+}
+.flex-container {
+  display: flex;
+  background-color: rgb(224, 193, 241);
+}
+.flex-container > div {
+  background-color: #d7f0d8;
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+</style> 
+<body>
+    <head>
+<!--EXTERNAL EXAMPLE + Font -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<!--INLINE EXAMPLE-->
+    <h1 style="color:rgb(16, 72, 22);">Lea Levine</h1>
+    <p style="color:purple;"> Welcome to my Portfolio</p>
+    <p style="color:purple;">About me!</p>
+    
+    <div class="container">
+        <div class="black-box">Journalism and Anthropology Major</div>
+        <div class="purple-box">Passionate about the intersection of antrhopology and criminal justice policy
+        </div>
+<!--LINK + Flex Box EXAMPLE-->
+    <h2>Choose</h2>
+    <div class="flex-container">
+        <div><a href="https://images.unsplash.com/photo-1728233363803-88a1226bf91d?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Linkedin 1</a></div>
+        <div><a href="https://images.unsplash.com/photo-1728233363803-88a1226bf91d?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Linkedin 2</a></div>
+        <div><a href="https://images.unsplash.com/photo-1728233363803-88a1226bf91d?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Linkedin 3</a></div>  
+      </div>
+<!--IMG-->
+<img id = "cat"
+    src="https://placecats.com/g/300/200" alt="if i were a cat..." width="170" height="100">
+
+</body>
+</html>
